@@ -1,13 +1,13 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller, Post, UsePipes, ValidationPipe, Get, UseGuards, Req, HttpCode, HttpStatus, Res } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { CreateUserDto } from 'src/user/dto/create-user-dto';
+import { CreateUserDto } from '../user/dto/create-user-dto';
 import { GoogleAuthGuard } from './utils/Guards';
-import { LoginUserDto } from 'src/user/dto/login-user-dto';
+import { LoginUserDto } from '../user/dto/login-user-dto';
 import { User } from 'src/user/schema/user.schema';
 import { Response } from 'express';
 import { JwtGuard } from './utils/JwtGuard';
-import { UserService } from 'src/user/user.service';
+import { UserService } from '../user/user.service';
 
 @Controller('auth')
 export class AuthController {

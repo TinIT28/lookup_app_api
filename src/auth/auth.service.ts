@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { ObjectId } from 'mongoose';
-import { CreateUserDto } from 'src/user/dto/create-user-dto';
-import { LoginUserDto } from 'src/user/dto/login-user-dto';
-import { UserService } from 'src/user/user.service';
-import { UserDetails } from 'src/utils/types';
+import { CreateUserDto } from '../user/dto/create-user-dto';
+import { LoginUserDto } from '../user/dto/login-user-dto';
+import { UserService } from '../user/user.service';
+import { UserDetails } from '../utils/types';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt';
 import { User } from 'src/user/schema/user.schema';
