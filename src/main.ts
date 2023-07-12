@@ -19,7 +19,7 @@ async function bootstrap() {
       maxAge: 60000,
     }
   }));
-  app.use(bodyParser.json({ limit: '20mb' }));
+  app.use(bodyParser.json({ limit: "20mb" }));
   app.use(bodyParser.urlencoded({ limit: '20mb', extended: true }));
   app.use(cookieParser())
   app.use(passport.initialize());
