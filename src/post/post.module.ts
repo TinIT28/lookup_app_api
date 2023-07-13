@@ -4,9 +4,9 @@ import { PostController } from './post.controller';
 import { PostService } from './post.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PostsSchema } from './schema/post.schema';
-import { CloudinaryModule } from 'src/cloudinary/cloudinary.module';
-import { CommentModule } from 'src/comment/comment.module';
-import { UserModule } from 'src/user/user.module';
+import { CloudinaryModule } from '../cloudinary/cloudinary.module';
+import { CommentModule } from '../comment/comment.module';
+import { UserModule } from '../user/user.module';
 import { PostGateway } from './post.gateway';
 
 @Module({

@@ -4,7 +4,6 @@ import { AuthService } from './auth.service';
 import { CreateUserDto } from '../user/dto/create-user-dto';
 import { GoogleAuthGuard } from './utils/Guards';
 import { LoginUserDto } from '../user/dto/login-user-dto';
-import { User } from 'src/user/schema/user.schema';
 import { Response } from 'express';
 import { JwtGuard } from './utils/JwtGuard';
 import { UserService } from '../user/user.service';

@@ -2,7 +2,7 @@
 import { Controller, Get, Put, Request, Res, UseGuards, Param, Body } from '@nestjs/common';
 import { UserService } from './user.service';
 import { Response } from 'express';
-import { JwtGuard } from 'src/auth/utils/JwtGuard';
+import { JwtGuard } from '../auth/utils/JwtGuard';
 import { UpdateUserDto } from './dto/update-user-dto';
 
 @Controller('user')

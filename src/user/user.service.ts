@@ -11,7 +11,7 @@ import { UserDetails } from 'src/utils/types';
 import { Response } from 'express';
 import { UpdateUserDto } from './dto/update-user-dto';
 import { UserGateway } from './user.gateway';
-import { CloudinaryService } from 'src/cloudinary/cloudinary.service';
+import { CloudinaryService } from '../cloudinary/cloudinary.service';
 
 @Injectable()
 export class UserService {

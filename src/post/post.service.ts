@@ -6,9 +6,9 @@ import { Posts } from './schema/post.schema';
 import { CreatePostDto } from './dto/create-post-dto';
 import { UpdatePostDto } from './dto/update-post-dto';
 import { CloudinaryService } from '../cloudinary/cloudinary.service';
-import { CommentService } from 'src/comment/comment.service';
+import { CommentService } from '../comment/comment.service';
 import { UserService } from '../user/user.service';
-import { CreateCommentDto } from 'src/comment/dto/create-comment-dto';
+import { CreateCommentDto } from '../comment/dto/create-comment-dto';
 import { PostGateway } from './post.gateway';
 
 @Injectable()

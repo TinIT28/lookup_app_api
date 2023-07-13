@@ -3,13 +3,10 @@ import { Body, Controller, Post, Get, Param, Put, Delete, UseGuards, Res, Reques
 import { PostService } from './post.service';
 import { Response } from 'express';
 import { CreatePostDto } from './dto/create-post-dto';
-import { Posts } from './schema/post.schema';
-import { ObjectId } from 'mongoose';
 import { UpdatePostDto } from './dto/update-post-dto';
-import { JwtGuard } from 'src/auth/utils/JwtGuard';
-import { UserService } from 'src/user/user.service';
+import { JwtGuard } from '../auth/utils/JwtGuard';
+import { UserService } from '../user/user.service';
 import { CreateCommentDto } from '../comment/dto/create-comment-dto';
-import { GoogleAuthGuard } from 'src/auth/utils/Guards';
 
 @Controller('post')
 export class PostController {

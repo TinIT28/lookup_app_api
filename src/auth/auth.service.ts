@@ -7,7 +7,7 @@ import { UserService } from '../user/user.service';
 import { UserDetails } from '../utils/types';
 import * as bcrypt from 'bcryptjs';
 import { JwtService } from '@nestjs/jwt';
-import { User } from 'src/user/schema/user.schema';
+import { User } from '../user/schema/user.schema';
 import { Response } from 'express';
 
 @Injectable()
