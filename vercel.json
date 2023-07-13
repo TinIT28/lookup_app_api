@@ -9,10 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": [
-        "src/main.ts",
-        "src/auth/auth.module.ts"
-      ]
+      "dest": "src/auth"
     }
   ]
 }
