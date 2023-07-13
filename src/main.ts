@@ -25,6 +25,6 @@ async function bootstrap() {
   app.use(passport.initialize());
   app.use(passport.session());
   app.useWebSocketAdapter(new IoAdapter(app));
-  await app.listen(process.env.PORT);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
