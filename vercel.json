@@ -2,15 +2,7 @@
     "version": 2,
     "env": 
       {
-        "DB_URI": "@DB_URI",
-        "JWT_SECRET": "@JWT_SECRET",
-        "JWT_EXPIRE": "@JWT_EXPIRE",
-        "GOOGLE_CLIENT_ID": "@GOOGLE_CLIENT_ID",
-        "GOOGLE_CLIENT_SECRET": "@GOOGLE_CLIENT_SECRET",
-        "CLOUDINARY_NAME": "@CLOUDINARY_NAME",
-        "CLOUDINARY_API_KEY": "@CLOUDINARY_API_KEY",
-        "CLOUDINARY_API_SECRET": "@CLOUDINARY_API_SECRET",
-        "PORT": "@PORT"
+        "DB_URI": "@DB_URI"
       },
     
     "builds": [
