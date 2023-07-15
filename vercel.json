@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "env": [
+    "env": 
       {
         "DB_URI": "@DB_URI",
         "JWT_SECRET": "@JWT_SECRET",
@@ -11,8 +11,8 @@
         "CLOUDINARY_API_KEY": "@CLOUDINARY_API_KEY",
         "CLOUDINARY_API_SECRET": "@CLOUDINARY_API_SECRET",
         "PORT": "@PORT"
-      }
-    ],
+      },
+    
     "builds": [
         {
             "src": "src/main.ts",
