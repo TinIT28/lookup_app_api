@@ -11,6 +11,7 @@ import { Server } from 'socket.io';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   app.use(session({
     secret: 'jfaejlfhsdhafddksf',
     saveUninitialized: false,
