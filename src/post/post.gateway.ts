@@ -2,7 +2,7 @@
 import { WebSocketGateway, WebSocketServer, SubscribeMessage } from '@nestjs/websockets';
 import { Server } from 'socket.io';
 
-@WebSocketGateway(8001, { cors: '*:*' })
+@WebSocketGateway(8001, { cors: '*:*', referrerPolicy: 'no-referrer-when-downgrade' })
 export class PostGateway {
     @WebSocketServer()
     server: Server;

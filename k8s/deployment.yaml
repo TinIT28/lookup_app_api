@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lookup-app-nestjs
+spec:
+  selector:
+    matchLabels:
+      app: lookup-app-nestjs
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: lookup-app-nestjs
+    spec:
+      containers:
+        - name: lookup-app-nestjs
+          image: tinit28/lookup-app-nestjs
+          ports:
+            - containerPort: 8000

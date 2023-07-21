@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lookup-app-nestjs
+spec:
+  selector:
+    app: lookup-app-nestjs
+  ports:
+    - protocol: TCP
+      port: 8000
+  type: LoadBalancer
